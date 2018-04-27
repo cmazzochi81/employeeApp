@@ -52,11 +52,6 @@ export class EmployeeTableComponent implements OnInit {
     
   }//End ng onInit
 
-  /**
-   * Setting the sort, after the view init, since this component, will
-   * be able to query its view, for the initialized sort.
-   */
-
   ngAfterViewInit() {
     this.dataSource.sort = this.sort;
   }
