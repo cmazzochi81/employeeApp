@@ -27,4 +27,13 @@ mat-row:nth-child(even){
 
 mat-row:nth-child(odd){
           background-color:#daf2e4;
-          }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 374px){
+#appDiv{
+	width:100%; 
+	margin: 0 auto; 
+	border:2px solid #000;
+}
+
+}
