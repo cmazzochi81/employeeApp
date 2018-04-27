@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+#appDiv{
+	width:50%; 
+	margin: 40px auto; 
+	border:2px solid #000;
+}
+
+img{
+	border: 2px solid #000;
+	margin-top:5px;
+}
+
+.mat-header-row{
+	background-color:#71a2a6;
+	color:#fff;
+	border: 2px solid #000;
+	font-family: Arial;
+}
+
+mat-row{
+	border: 2px solid #000;
+	font-family: Arial;
+}
+mat-row:nth-child(even){
+          background-color:#eef2db;
+          }
+
+mat-row:nth-child(odd){
+          background-color:#daf2e4;
+          }
