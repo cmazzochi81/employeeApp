@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
-
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 #appDiv{
 	width:50%; 
 	margin: 40px auto; 
@@ -41,6 +40,10 @@ mat-row:nth-child(odd){
 
 .mat-sort-header-arrow{
 	display:block;
+}
+
+#hide{
+	margin:10px;
 }
 
 

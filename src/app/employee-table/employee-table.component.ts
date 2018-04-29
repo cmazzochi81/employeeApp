@@ -9,11 +9,12 @@ import {EmployeeService} from '../employee.service';
   styleUrls: ['./employee-table.component.css']
 })
 export class EmployeeTableComponent implements OnInit {
+  isHidden: boolean;
   @ViewChild(MatSort) sort: MatSort;
   dataSource;
   displayedColumns = ['photo', 'name', 'position'];
 
-  constructor() { }
+  constructor() {}
   ngOnInit() {   
     this.dataSource = new MatTableDataSource([
             {
@@ -55,5 +56,12 @@ export class EmployeeTableComponent implements OnInit {
   ngAfterViewInit() {
     this.dataSource.sort = this.sort;
   }
+
+  toggle() {
+      console.log("Check 1-2 baby");
+
+    }
+
+
 
 }//End class EmployeeTableComponent

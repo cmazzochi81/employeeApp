@@ -13,7 +13,7 @@ import {EmployeeService} from './employee.service';
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeTableComponent 
+    EmployeeTableComponent
     
   ],
   imports: [

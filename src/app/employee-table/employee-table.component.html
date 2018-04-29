@@ -1,6 +1,7 @@
 <div>
   <mat-table [dataSource] = "dataSource" matSort>
     <ng-container matColumnDef="photo">
+
       <mat-header-cell *matHeaderCellDef>Profile</mat-header-cell>
       <mat-cell *matCellDef="let employee"><img width = "50" height = "50" src = "../assets/images/{{employee.username}}.jpg" >
       </mat-cell>
@@ -11,7 +12,6 @@
       <mat-cell *matCellDef="let employee">{{employee.name}}</mat-cell>
     </ng-container>
 
-
     <ng-container matColumnDef="position">
       <mat-header-cell *matHeaderCellDef mat-sort-header>Job Title</mat-header-cell>
       <mat-cell *matCellDef="let employee">{{employee.position}}</mat-cell>
@@ -20,8 +20,8 @@
     <mat-header-row *matHeaderRowDef="displayedColumns" color="primary"></mat-header-row>
     <mat-row *matRowDef="let row; columns:displayedColumns"></mat-row>
   </mat-table>
-  <button md-button>Hide Table</button>
-  <!-- <button md-raised-button>Raised</button>
-  <button md-fab>Check (FAB)</button>
-  <button md-mini-fab>Check (mini-FAB) </button> -->
+  <button (click)="toggle();" id="hide" mat-button color="primary">Hide Table</button>
+  <!-- <button mat-raised-button>Hide Table</button>
+  <button mat-fab>Check (FAB)</button>
+  <button mat-mini-fab>Check (mini-FAB) </button> -->
 </div>
