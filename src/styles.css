@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+
 #appDiv{
 	width:50%; 
 	margin: 40px auto; 
@@ -40,6 +42,8 @@ mat-row:nth-child(odd){
 .mat-sort-header-arrow{
 	display:block;
 }
+
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 374px){
 #appDiv{
