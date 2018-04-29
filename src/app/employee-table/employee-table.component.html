@@ -1,5 +1,8 @@
-<div>
+
+<div id="matTableDiv">
+
   <mat-table [dataSource] = "dataSource" matSort>
+
     <ng-container matColumnDef="photo">
 
       <mat-header-cell *matHeaderCellDef>Profile</mat-header-cell>
@@ -20,7 +23,7 @@
     <mat-header-row *matHeaderRowDef="displayedColumns" color="primary"></mat-header-row>
     <mat-row *matRowDef="let row; columns:displayedColumns"></mat-row>
   </mat-table>
-  <button (click)="toggle();" id="hide" mat-button color="primary">Hide Table</button>
+  <button (click)="toggle();" id="table-button" mat-button color="primary">Hide Table</button>
   <!-- <button mat-raised-button>Hide Table</button>
   <button mat-fab>Check (FAB)</button>
   <button mat-mini-fab>Check (mini-FAB) </button> -->

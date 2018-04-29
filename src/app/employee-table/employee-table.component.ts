@@ -48,9 +48,6 @@ export class EmployeeTableComponent implements OnInit {
               "position": "Database Administrator" 
             }
     ]); //End data object
-
-    
-    
   }//End ng onInit
 
   ngAfterViewInit() {
@@ -58,10 +55,20 @@ export class EmployeeTableComponent implements OnInit {
   }
 
   toggle() {
-      console.log("Check 1-2 baby");
+    console.log("The hide table button was clicked.");
 
-    }
+    var button = document.querySelector('#table-button');
 
-
+    var table  = document.querySelector('.mat-table');
+    
+          if (table.style.display == "block") {
+              table.style.display = "none";
+              button.innerHTML = "Show Table";
+          } else {
+              table.style.display = "block";
+              button.innerHTML = "Hide Table";
+          }
+  
+  }
 
 }//End class EmployeeTableComponent
