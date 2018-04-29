@@ -9,7 +9,6 @@ import {EmployeeService} from '../employee.service';
   styleUrls: ['./employee-table.component.css']
 })
 export class EmployeeTableComponent implements OnInit {
-  isHidden: boolean;
   @ViewChild(MatSort) sort: MatSort;
   dataSource;
   displayedColumns = ['photo', 'name', 'position'];
@@ -57,10 +56,10 @@ export class EmployeeTableComponent implements OnInit {
   toggle() {
     console.log("The hide table button was clicked.");
 
-    var button = document.querySelector('#table-button');
+    var button = <HTMLElement>document.querySelector('#table-button');
 
-    var table  = document.querySelector('.mat-table');
-    
+    var table  = <HTMLElement>document.querySelector('.mat-table');
+
           if (table.style.display == "block") {
               table.style.display = "none";
               button.innerHTML = "Show Table";
@@ -68,7 +67,5 @@ export class EmployeeTableComponent implements OnInit {
               table.style.display = "block";
               button.innerHTML = "Hide Table";
           }
-  
   }
-
 }//End class EmployeeTableComponent
