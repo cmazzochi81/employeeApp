@@ -3,7 +3,6 @@
 #appDiv{
 	width:50%; 
 	margin: 40px auto; 
-	border:2px solid #000;
 }
 
 img{
@@ -11,49 +10,49 @@ img{
 	margin-top:5px;
 }
 
-
+#table-button{
+	margin-left:0px;
+	margin-top:10px;
+}
 .mat-header-row{
 	background-color:#71a2a6;
 	color:#fff;
-	border: 2px solid #000;
+	border-top: 3px solid #000;
+	border-right:3px solid #000;
+	border-bottom:1px solid #000;
+	border-left:3px solid #000;
 	font-family: Arial;
+	font-size:2em;
 }
 
+.mat-header-cell{
+	font-size:18px;
+	font-weight:bold;
+}
+
+mat-table{
+	border-bottom: 2px solid #000;
+}
 mat-row{
 	border: 2px solid #000;
 	font-family: Arial;
 }
+mat-row:nth-child(even){background-color:#eef2db;}
 
-
-mat-row:nth-child(even){
-          background-color:#eef2db;
-          }
-
-mat-row:nth-child(odd){
-          background-color:#daf2e4;
-}
+mat-row:nth-child(odd){background-color:#daf2e4;}
 
 .cdk-visually-hidden{
-	/*display:none;*/
 	font-size:8pt;
 	position:absolute;
 }
+.mat-sort-header-arrow{display:block;}
 
-.mat-sort-header-arrow{
-	display:block;
-}
-
-#hide{
-	margin:10px;
-}
-
-
+#hide{margin:10px;}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 374px){
 #appDiv{
 	width:100%; 
 	margin: 0 auto; 
-	border:2px solid #000;
 }
 
 }
