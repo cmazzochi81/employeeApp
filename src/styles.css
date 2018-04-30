@@ -60,12 +60,10 @@ mat-header-cell span{
 	margin: 0 auto; 
 }
 
-.mat-sort-header-button{
 
-}
 
 .mat-header-cell{
-	font-size:14px;
+	font-size:12px;
 }
 
 }
