@@ -68,4 +68,6 @@ export class EmployeeTableComponent implements OnInit {
               button.innerHTML = "Hide Table";
           }
   }
+
+  
 }//End class EmployeeTableComponent
