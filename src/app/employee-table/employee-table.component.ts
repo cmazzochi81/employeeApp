@@ -60,7 +60,7 @@ export class EmployeeTableComponent implements OnInit {
 
     var table  = <HTMLElement>document.querySelector('.mat-table');
 
-          if (table.style.display == "block") {
+          if (table.style.display != "none") {
               table.style.display = "none";
               button.innerHTML = "Show Table";
           } else {
